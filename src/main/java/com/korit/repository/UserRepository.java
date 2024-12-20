@@ -1,6 +1,6 @@
 package com.korit.repository;
 
-import com.korit.main.entity.User;
+import com.korit.entity.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,13 +10,12 @@ public class UserRepository {
     private List<User> userList;
 
     private UserRepository() {
-        userList = new ArrayList<User>();
+        userList = new ArrayList<>();
     }
 
     public static UserRepository getInstance() {
         if (instance == null) {
             instance = new UserRepository();
-
         }
         return instance;
     }
@@ -24,4 +23,5 @@ public class UserRepository {
     public void addUser(User user) {
         userList.add(user);
     }
+
 }

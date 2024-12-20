@@ -1,6 +1,6 @@
 package com.korit.service;
 
-import com.korit.main.entity.User;
+import com.korit.entity.User;
 
 public interface UserService {
     void add(User user);

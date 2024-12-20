@@ -1,24 +1,22 @@
 package com.korit.controller;
 
-
-import com.korit.main.entity.User;
+import com.korit.entity.User;
+import com.korit.repository.UserRepository;
 import com.korit.service.UserService;
 import com.korit.service.UserServiceImpl;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-
 
 @AllArgsConstructor
 public class UserController {
+
     @Setter
     private UserService userService;
 
-
     public void signIn() {
 
-
     }
-
 
     public void signUp() {
         String username = "test";
@@ -31,9 +29,5 @@ public class UserController {
                 .build();
 
         userService.add(user);
-
-  public void add(){
-
-        }
     }
 }

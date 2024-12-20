@@ -12,7 +12,7 @@ public class Main {
         UserController userController = new UserController(userService);
         userController.signUp();
         userController.signIn();
-        userController.setUserService(userService2);
+
 
 
 
